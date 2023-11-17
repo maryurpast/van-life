@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fff7ed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ----- Nav ----- */
+
+header {
+  padding: 2.25em 1.625em;
+  background-color: #fff7ed;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+.nav-link {
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.nav-link ~ .nav-link {
+  margin-left: 1em;
+}
+
+.nav-link:hover {
+  color: #161616;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.site-logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+/* ----- General links styling ----- */
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.375rem;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.link-button:hover {
+  transform: translate(1px, 1px);
+}
+
+/* ----- Home ----- */
+
+.home-container {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.46),
+      rgba(0, 0, 0, 0.46)
+    ),
+    url(./assets/images/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  color: white;
+  padding: 4em 1.7em;
+}
+
+.home-container h1,
+.home-container p {
+  margin: 0;
+}
+
+.home-container h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 42px;
+  margin-bottom: 0.64em;
+}
+
+.home-container p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 3.25em;
+}
+
+.home-container .link-button {
+  color: #fff;
+  background-color: #ff8c38;
+  padding: 1em 0;
+  width: 100%;
+}
+
+/* ----- About ----- */
+
+.about-hero-img {
+  max-width: 100%;
+  display: block;
+}
+
+.about-page-content {
+  padding-inline: 32px;
+  margin-bottom: 55px;
+  color: #161616;
+}
+
+.about-page-content h1 {
+  line-height: 38px;
+}
+
+.about-page-content p {
+  line-height: 22px;
+}
+
+.about-page-cta {
+  background-color: #ffcc8d;
+  color: #161616;
+  padding-inline: 32px;
+  padding-bottom: 32px;
+  margin-inline: 27px;
+  border-radius: 5px;
+}
+
+.about-page-cta h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-block: 37px;
+}
+
+.about-page-cta .link-button {
+  color: #fff;
+  background-color: #161616;
+  border-radius: 10px;
+}
