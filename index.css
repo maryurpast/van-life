@@ -45,8 +45,8 @@ header {
 }
 
 main {
-  margin: 0 auto 84px;
-  width: 1000px;
+  margin: 0 auto 80px;
+  width: 1024px;
   max-width: 1200px;
 }
 
@@ -250,6 +250,18 @@ header .close-btn {
   min-height: 350px;
   color: white;
   padding: 4em 1.7em;
+  margin-bottom: -80px;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 100px;
+    width: 100%;
+  }
 }
 
 .home-container h1,
@@ -569,6 +581,11 @@ header .close-btn {
   height: 70px;
   border-radius: 5px;
   margin-right: 17px;
+}
+
+.host-van-single > a {
+  margin-left: auto;
+  padding-inline: 10px;
 }
 
 .host-van-info h3 {

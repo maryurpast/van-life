@@ -30,7 +30,7 @@ export async function getVans() {
     ...doc.data(),
     id: doc.id,
   }));
-  console.log(dataArr);
+
   return dataArr;
 }
 
